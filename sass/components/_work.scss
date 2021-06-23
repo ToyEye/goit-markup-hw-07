@@ -1,0 +1,47 @@
+.work {
+  background-color: #fff;
+}
+
+.work .work-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-cards .item {
+  margin-right: 30px;
+}
+
+.work-cards .item:last-child {
+  margin-right: 0;
+}
+
+.work-cards .item-position {
+  position: relative;
+}
+
+.item-position .text {
+  position: absolute;
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--lite-color);
+  background-color: #2f303acc;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  text-align: center;
+  padding-top: 27px;
+}
+
+.work .title {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
