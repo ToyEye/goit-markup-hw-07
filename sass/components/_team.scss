@@ -1,8 +1,8 @@
-.container_team {
+.containerTeam {
   background-color: var(--bgc-btn);
 }
 
-.team .title {
+.team__title {
   color: var(--primary-color);
   text-align: center;
   font-weight: 700;
@@ -11,23 +11,25 @@
   margin-bottom: 50px;
 }
 
-.team .team-cards {
+.team__list {
   display: flex;
   justify-content: space-between;
 }
 
-.team-cards .cards {
+.team__cards {
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
-.team-cards .cards:last-child {
-  margin: 0;
-}
 
-.team .name {
+
+.team__name {
   color: var(--primary-color);
   font-weight: 500;
   font-size: 16px;
@@ -37,14 +39,14 @@
   letter-spacing: 0.03em;
 }
 
-.cards {
+.team__cards {
   height: 428px;
   width: 270px;
   background-color: var(--lite-color);
   text-align: center;
 }
 
-.team .profession {
+.team__pofession {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
@@ -52,7 +54,7 @@
 
 /* SOCIAL ICONS */
 
-.team-icon-list {
+.team__iconList {
   display: flex;
   justify-content: center;
   padding-top: 16px;
@@ -60,15 +62,16 @@
   padding-left: 32px;
 }
 
-.team-icon-list .icon-item {
+.team__iconItem {
   margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-.team-icon-list .icon-item:last-child {
-  margin-right: 0;
-}
 
-.social-link {
+
+.team__socialLink {
   display: flex;
   max-width: 44px;
   max-height: 44px;
@@ -77,15 +80,15 @@
   border-radius: 50%;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,&:focus {
+      color: var(--lite-color);
+      background-color: var(--activ);
+    }
 }
 
-.social-link:hover,
-.social-link:focus {
-  color: var(--lite-color);
-  background-color: var(--activ);
-}
 
-.icon-item .icon-social {
+.team__iconSocial {
   width: 20px;
   height: 20px;
   fill: currentColor;

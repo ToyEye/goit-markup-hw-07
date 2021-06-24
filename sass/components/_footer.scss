@@ -4,25 +4,24 @@
   padding-bottom: 60px;
 }
 
-.footer .web {
-  color: var(--lite-color);
+.footer__flex {
+  display: flex;
 }
 
-.footer .logo {
-  margin-top: 60px;
-}
 
-.footer .link {
-  color: var(--accent-color);
+
+.data__link {
+  color: var(--contacts-footer-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover, &:focus {
+    color: var(--activ);
+  }
 }
 
-.footer .link:hover,
-.footer .link:focus {
-  color: var(--activ);
-}
 
-.address {
+
+.data__address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -30,34 +29,30 @@
   padding-top: 20px;
 }
 
-.address .street {
+.data__street {
   color: var(--lite-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.72;
 }
 
-.getcontact li {
+.data__item {
   padding-top: 9px;
 }
 
-.address .link {
-  color: var(--contacts-footer-color);
-}
+
 
 /* Правая часть футера */
 
-.footer-flex {
-  display: flex;
-}
 
-.invite {
+
+.invite__box {
   width: 206px;
   margin-left: 70px;
   margin-top: 10px;
 }
 
-.invite .title {
+.invite__title {
   font-family: roboto, sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -67,12 +62,12 @@
   color: var(--lite-color);
 }
 
-.foot-icon-list {
+.invite__iconList {
   display: flex;
   justify-content: space-between;
 }
 
-.footer-link {
+.invite__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,30 +79,31 @@
   border: 1px solid var(--bgc-icon-footer);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover, &:focus {
+    background-color: var(--activ);
+  }
 }
 
-.footer-link:focus,
-.footer-link:hover {
-  background-color: var(--activ);
-}
 
-.svg-icon {
+
+.invite__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
-.subscribe {
+.subscribe__box {
   margin-left: 93px;
   margin-top: 10px;
 }
 
-.form-subscribe {
+.subscribe__form {
   display: flex;
   align-items: center;
 }
 
-.subscribe input {
+.subscribe__input {
   width: 358px;
   font-family: roboto, sans-serif;
   font-weight: 400;
@@ -121,15 +117,16 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
+
+  &:hover,&:focus {
+    border: 1px solid var(--activ);
+    outline: none;
+  }
 }
 
-.subscribe input:hover,
-.subscribe input:focus {
-  border: 1px solid var(--activ);
-  outline: none;
-}
 
-.subscribe .title {
+
+.subscribe__title {
   font-family: roboto, sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -139,7 +136,7 @@
   color: var(--lite-color);
 }
 
-.subscribe .btn {
+.subscribe__btn {
   position: relative;
   width: 200px;
   font-family: roboto, sans-serif;
@@ -156,11 +153,11 @@
   border-radius: 4px;
 }
 
-.subscribe .text {
+.subscribe__text {
   padding-right: 40px;
 }
 
-.send-svg {
+.subscribe__sendSvg {
   position: absolute;
   top: 50%;
   right: 28px;
