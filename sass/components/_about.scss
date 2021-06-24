@@ -4,12 +4,16 @@
   margin-left: -30px;
 }
 
-.about .item {
+.about__item {
   flex-basis: calc((100% - 4 * 30px) / 4);
   margin-left: 30px;
+
+  &:last-child {
+    padding-right: 0;
+  }
 }
 
-.about-icon-section {
+.about__cardSection {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,16 +23,12 @@
   background-color: var(--bgc-btn);
 }
 
-.about-icon-section .icon {
+.about_icon {
   width: 70px;
   height: 70px;
 }
 
-.about .item:last-child {
-  padding-right: 0;
-}
-
-.about .title {
+.about__title {
   font-family: roboto, sans-serif;
   color: var(--primary-color);
   font-weight: bold;
@@ -38,7 +38,7 @@
   letter-spacing: 0.03em;
 }
 
-.about .feature {
+.about__feature {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;

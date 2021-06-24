@@ -1,25 +1,27 @@
 .work {
   background-color: #fff;
+  padding-bottom: 94px;
 }
 
-.work .work-cards {
+.work__cards {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-.work-cards .item {
+.work__item {
   margin-right: 30px;
 }
 
-.work-cards .item:last-child {
+.work__item:last-child {
   margin-right: 0;
 }
 
-.work-cards .item-position {
+.work__itemPosition {
   position: relative;
 }
 
-.item-position .text {
+.work__text {
   position: absolute;
   font-family: roboto, sans-serif;
   font-weight: 700;
@@ -37,7 +39,7 @@
   padding-top: 27px;
 }
 
-.work .title {
+.work__title {
   color: var(--primary-color);
   font-weight: 700;
   font-size: 36px;

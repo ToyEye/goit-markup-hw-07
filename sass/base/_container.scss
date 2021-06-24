@@ -3,14 +3,24 @@
   padding-bottom: 94px;
 }
 
-.section-bott {
-  padding-bottom: 94px;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.containerHero {
+  background-image: linear-gradient(
+      to right,
+      var(--hero-overlay-color),
+      var(--hero-overlay-color)
+    ),
+    url("../images/background.jpg");
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
