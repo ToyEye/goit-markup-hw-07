@@ -2,15 +2,6 @@
   background-color: var(--bgc-btn);
 }
 
-.team__title {
-  color: var(--primary-color);
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  margin-bottom: 50px;
-}
-
 .team__list {
   display: flex;
   justify-content: space-between;
@@ -26,8 +17,6 @@
     margin: 0;
   }
 }
-
-
 
 .team__name {
   color: var(--primary-color);
@@ -69,8 +58,6 @@
   }
 }
 
-
-
 .team__socialLink {
   display: flex;
   max-width: 44px;
@@ -81,12 +68,12 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,&:focus {
-      color: var(--lite-color);
-      background-color: var(--activ);
-    }
+  &:hover,
+  &:focus {
+    color: var(--lite-color);
+    background-color: var(--activ);
+  }
 }
-
 
 .team__iconSocial {
   width: 20px;

@@ -1,0 +1,75 @@
+.hero__title {
+  font-family: roboto, sans-serif;
+  color: var(--lite-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.35;
+}
+
+.invite__title {
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  color: var(--lite-color);
+}
+
+.subscribe__title {
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  color: var(--lite-color);
+}
+
+.projects__title {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.clients__title {
+  color: var(--primary-color);
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.171;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team__title {
+  font-family: roboto, sans-serif;
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 50px;
+}
+
+.work__title {
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--primary-color);
+}
+
+.about__title {
+  font-family: roboto, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+}
