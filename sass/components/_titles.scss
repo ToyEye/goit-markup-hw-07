@@ -14,6 +14,7 @@
   letter-spacing: 0.03em;
   margin-bottom: 20px;
   color: var(--lite-color);
+  text-align: center;
 }
 
 .subscribe__title {
@@ -66,10 +67,14 @@
 
 .about__title {
   font-family: roboto, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 10px;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+  text-align: center;
+  @media screen and (min-width: 480px) {
+    text-align: left;
+  }
 }

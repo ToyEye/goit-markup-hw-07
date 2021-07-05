@@ -1,26 +1,42 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 .containerHero {
-  background-image: linear-gradient(
-      to right,
-      var(--hero-overlay-color),
-      var(--hero-overlay-color)
-    ),
-    url("../images/background.jpg");
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: url(/images/hero-mobile.jpg);
+  background-size: 480px 400px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/images/hero-mobile@2x.jpg);
+  }
+}
+
+.workContainer {
+  display: none;
 }

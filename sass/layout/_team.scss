@@ -3,18 +3,36 @@
 }
 
 .team__list {
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 
 .team__cards {
-  margin-right: 30px;
+  width: 100%;
+  background-color: var(--lite-color);
+  text-align: center;
+  margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  &:last-child {
-    margin: 0;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    margin-left: 30px;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
@@ -23,19 +41,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   letter-spacing: 0.03em;
 }
 
-.team__cards {
-  height: 428px;
-  width: 270px;
-  background-color: var(--lite-color);
-  text-align: center;
-}
-
-.team__pofession {
+.team__proffession {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
@@ -46,13 +57,14 @@
 .team__iconList {
   display: flex;
   justify-content: center;
-  padding-top: 16px;
+  margin-top: 16px;
   padding-right: 32px;
   padding-left: 32px;
 }
 
 .team__iconItem {
   margin-right: 10px;
+  margin-bottom: 24px;
   &:last-child {
     margin-right: 0;
   }
